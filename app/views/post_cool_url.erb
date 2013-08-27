@@ -1,0 +1,7 @@
+<h3>Top Form Inputs:</h3>
+<% @list = @post %>
+<%= erb :_list, collection: @list%>
+
+<h3>Bottom Form Inputs: </h3>
+<% @list = @user %>
+<%= erb :_list, collection: @list %>

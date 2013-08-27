@@ -1,0 +1,32 @@
+
+<form action='/cool_url' method='post'>
+  <%= erb :_extrafields %>
+  <div>
+    <input type='text' name='user[textarea]' placeholder='textarea'>
+  </div>
+  <div>
+    <ul>
+      <li><input type='radio' name='user[radio]' value='one'>one</input></li>
+      <li><input type='radio' name='user[radio]' value='two'>two</input></li>
+      <li><input type='radio' name='user[radio]' value='three'>three</input></li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li><input type='checkbox' name='user[checkbox]' value='Leonard'>Leonard</input></li>
+      <li><input type='checkbox' name='user[checkbox]' value='Jenny'>Jenny</input></li>
+      <li><input type='checkbox' name='user[checkbox]' value='David'>David</input></li>
+    </ul>
+  </div>
+  <div>
+    <select name='user[restaurants]'>
+      <option value='JCT'>JCT</option>
+      <option value='Cakes & Ale'>Cakes & Ale</option>
+      <option value='One Eared Stag'>One Eared Stag</option>
+    </select>
+  </div>
+  <div>
+    <br>
+    <input type='submit' value='submit'>
+  </div>
+</form>
